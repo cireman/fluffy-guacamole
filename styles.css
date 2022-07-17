@@ -349,13 +349,12 @@ footer {
 }
 
 footer div {
-  width: 280px;
+  width: 288px;
   height: 156px;
-  /* margin-left: 10px; */
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
 }
 
 footer .info, .social {
@@ -387,15 +386,15 @@ footer div span {
   }
 }
 
-@media (min-width: 620px ) {
-  footer {
+@media (min-width: 580px ) {
+    footer {
   padding-top: 120px;
   display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: var(--gray);
   width: 100vw;
-  height: 500px;
+  height: 550px;
   }
 
 }
