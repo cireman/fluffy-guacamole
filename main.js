@@ -113,9 +113,7 @@ function printShoppingCart() {
         <span class="rest">-</span>
         <b class="amount">${amount}</b>
         <span class="add">+</span>
-        <span class="del">
-            <img src="./ecommerce/trash.svg" alt="">
-        </span>
+        <img src="./ecommerce/trash.svg" alt="" class="del">
     </div>
 </div>`;
   });
