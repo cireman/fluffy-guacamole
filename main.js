@@ -148,6 +148,9 @@ printclothes(data);
 shoppingBag.addEventListener("click", () => {
   containerShopping.classList.toggle("show__shopping");
 });
+shoppingBag.addEventListener("click", () => {
+  containerShopping.classList.toggle("close__shopping");
+});
 
 btnBuy.addEventListener("click", () => {
   const res = confirm("Desea encargar esta comida?");
