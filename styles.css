@@ -87,6 +87,10 @@ header .nav__btns img {
   height: 20px;
 }
 
+.shopping-bag{
+  z-index: 1;
+}
+
 .container__shopping {
     width: 30vw;
     height: 100vh;
@@ -110,6 +114,13 @@ header .nav__btns img {
 .content_shopping {
     height: 80%;
     padding: 1em;
+}
+
+.shopping__img {
+  width: 30px;
+}
+.shopping__img img {
+  width: 100%;
 }
 .content_total {
     height: 20%;
@@ -298,7 +309,7 @@ a {
   font-weight: 600;
 }
 
-.button__add {
+.button__conten {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -308,7 +319,7 @@ a {
   right: 0;
 }
 
-.button__add:hover {
+.button__conten:hover {
   background-color: var(--red);
 }
 

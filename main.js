@@ -1,7 +1,6 @@
 import { data } from "./js/data.js";
 
 const containerCloths = document.querySelector(".clothes__container");
-
 const shoppingBag = document.querySelector(".shopping-bag");
 const containerShopping = document.querySelector(".container__shopping");
 const contentShopping = document.querySelector(".content_shopping");
@@ -55,7 +54,7 @@ contentShopping.addEventListener("click", (event) => {
 containerCloths.addEventListener("click", (event) => {
   if (event.target.classList.contains("button__add")) {
     const id = parseInt(event.target.parentElement.id);
-
+    console.log(id);
     const [currentProduct] = data.filter((n) => n.id === id);
 
     if (shoppingObj[id]) {
@@ -131,15 +130,16 @@ function printclothes(array) {
     html += `
         <ul class="slider">
     <li id="slide1">
-    <div class="slider__element">
-    <img src="${urlImages}" alt="">
-    <p><span class="partA">&#36;${price} &#124;</span> <span class="partB">Stock: ${stock}</span> <br> <span class="partC">${name}</span></p>
-    <div class="button__add" id="${id}">
-    <img src="./ecommerce/plus-circle-regular-24.png" alt="">
-    </div>
-    </div>
+        <div class="slider__element">
+            <img src="${urlImages}" alt="">
+            <p><span class="partA">&#36;${price} &#124;</span> <span class="partB">Stock: ${stock}</span> <br> <span
+                    class="partC">${name}</span></p>
+            <div class="button__conten" id="${id}">
+                <img src="./ecommerce/plus-circle-regular-24.png" alt="" class="button__add">
+            </div>
+        </div>
     </li>
-    </ul>`;
+</ul>`;
   });
 
   containerCloths.innerHTML = html;
